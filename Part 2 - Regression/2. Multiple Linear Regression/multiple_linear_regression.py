@@ -17,6 +17,7 @@ print(X)
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder
 ct = ColumnTransformer(transformers=[('encoder', OneHotEncoder(), [3])], remainder='passthrough')#transformers(ecoder, method, index of column), reminder will remain the other column, without it will be returned only the applied columns.
+#to avoid a dummy variable trap we would like to cut the last column but sklearn does it for us, if not we would type: X=X[:,1:]
 X = np.array(ct.fit_transform(X))# apply the transform on X(and turn it to np array back)
 print("--- After one hot encoding the countries ---")
 print (X)

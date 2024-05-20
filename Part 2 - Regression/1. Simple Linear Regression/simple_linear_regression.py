@@ -23,7 +23,7 @@ regressor.fit(X_train, y_train)#create the best linear  line with our X,Y. the l
 y_pred = regressor.predict(X_test)#the prediction of y vs y_test which is the real salaries
 
 # Visualising the Training set results
-plt.scatter(X_train, y_train, color = 'red')#the points pointing on our actual values
+plt.scatter(X_train, y_train, color = 'red')#the points pointing on our actual 
 plt.plot(X_train, regressor.predict(X_train), color = 'blue')
 plt.title('Salary vs Experience (Training set)')
 plt.xlabel('Years of Experience')
