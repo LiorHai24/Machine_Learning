@@ -42,7 +42,7 @@ print(y_train)
 print(y_test)
 
 # Feature Scaling
-#the feature scaling method is used when there is a use of information that is not dummy variable or boolean parameter, to match the 
+#the feature scaling method is used when there is a use of information that is not dummy variable or boolean parameter, to match between the values of the features.
 from sklearn.preprocessing import StandardScaler
 sc = StandardScaler()
 X_train[:, 3:] = sc.fit_transform(X_train[:, 3:])# set the scale to match the train set and apply
