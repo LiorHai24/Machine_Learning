@@ -2,7 +2,7 @@
 #Non-Linear
 #
 #usage of feature scaling is used when there is a connection between the dependent and independent variables, like level and salary.
-#
+#support vector is used for ignoring the dots in the epsilon tube, and the dots outside the tube are used for training the model.
 # Importing the libraries
 import numpy as np
 import matplotlib.pyplot as plt
