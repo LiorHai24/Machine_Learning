@@ -1,0 +1,2 @@
+the idea of classification is to categorize a new data point according to given data which is
+divided into categories.
