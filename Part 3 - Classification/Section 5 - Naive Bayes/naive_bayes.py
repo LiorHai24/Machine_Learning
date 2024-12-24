@@ -1,4 +1,5 @@
 # Naive Bayes
+#I'm Here
 
 # Importing the libraries
 import numpy as np
@@ -27,9 +28,6 @@ print(X_train)
 print(X_test)
 
 # Training the Naive Bayes model on the Training set
-from sklearn.naive_bayes import GaussianNB
-classifier = GaussianNB()
-classifier.fit(X_train, y_train)
 
 # Predicting a new result
 print(classifier.predict(sc.transform([[30,87000]])))

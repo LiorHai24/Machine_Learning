@@ -33,7 +33,6 @@ classifier = SVC(kernel = 'linear', random_state = 0)#linear kernel
 classifier.fit(X_train, y_train)
 
 
-
 # Predicting a new result
 classifier.predict(sc_X.transform([[30,87000]]))
 
