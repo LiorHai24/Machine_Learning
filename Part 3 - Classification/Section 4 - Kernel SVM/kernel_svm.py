@@ -11,7 +11,7 @@
 #can use multiply kernels.
 
 #support vector regression:
-#visualizing the graph with the added dimention, we will take a plate instead of a line
+#visualizing the graph with the added dimention, we will take a plate(hyperplane) instead of a line
 #the line that we will take will be the intersection of the plate and the sphere
 #we will add a two more plates for the epsilon value
 
@@ -42,7 +42,7 @@ X_test = sc.transform(X_test)
 
 # Training the Kernel SVM model on the Training set
 from sklearn.svm import SVC
-classifier = SVC(kernel='rbf', random_state=0)
+classifier = SVC(kernel='rbf', random_state=0)#rbf for added dimention, leaner for the line
 classifier.fit(X_train, y_train)
 
 
