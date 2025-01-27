@@ -1,4 +1,5 @@
 # Logistic Regression
+#accuracy for this dataset: 89%
 
 # Importing the libraries
 import numpy as np
@@ -38,7 +39,7 @@ print(np.concatenate((y_pred.reshape(len(y_pred),1) , y_test.reshape(len(y_test)
 from sklearn.metrics import confusion_matrix, accuracy_score
 cm = confusion_matrix(y_test, y_pred)
 print(cm)#([65, 3] [8, 24]) 65 and 24 are the correct predictions, 3 and 8 are the incorrect predictions
-accuracy_score(y_test, y_pred)# the precentage of the correct predictions
+print(accuracy_score(y_test, y_pred))# the precentage of the correct predictions
 # Visualising the Training set results
 from matplotlib.colors import ListedColormap
 X_set, y_set = sc.inverse_transform(X_train), y_train#inverse the scaling to get the original values
