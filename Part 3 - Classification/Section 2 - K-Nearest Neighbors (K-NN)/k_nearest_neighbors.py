@@ -1,6 +1,7 @@
 # K-Nearest Neighbors (K-NN)
 #used on a graph which is diveded into categories
 #helps decide which category a new data point belongs to based on the majority of its K(usually 5)-nearest neighbors
+#accuracy: 93%
 
 # Importing the libraries
 import os

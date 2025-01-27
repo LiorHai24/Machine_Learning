@@ -15,6 +15,8 @@
 #the line that we will take will be the intersection of the plate and the sphere
 #we will add a two more plates for the epsilon value
 
+#accuracy: 93%
+
 # Importing the libraries
 import numpy as np
 import matplotlib.pyplot as plt
