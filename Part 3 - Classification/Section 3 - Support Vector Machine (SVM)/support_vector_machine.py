@@ -2,6 +2,7 @@
 
 #finding the maximum margin hyperplane that best separates the two classes according to the closest points to the margin that are equal distance from the margin
 #will choose the points that are closest to the other category
+#accuracy: 90%
 
 # Importing the libraries
 import numpy as np
